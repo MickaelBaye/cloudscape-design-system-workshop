@@ -17,13 +17,16 @@ import Shape from './components/shape';
 import ShellLayout from '../../layouts/shell';
 import { FormContext } from './validation/form-context';
 import { ContentLayout } from '@cloudscape-design/components';
+import ProjectPlanValidation from './components/project-plan-validation';
+import CostCalculator from './components/cost-calculator';
+import SpecializedWorkload from './components/specialized-workload';
 
 export default function App() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   return (
     <ShellLayout
       contentType="form"
-      breadcrumbs={<Breadcrumbs active={{ text: 'Create flavor', href: '/create-flavor/index.html' }} />}
+      breadcrumbs={<Breadcrumbs active={{ text: 'Create review', href: '/create-flavor/index.html' }} />}
       navigation={<Navigation />}
       tools={<HelpPanel header={<h2>Help panel</h2>} />}
     >
@@ -31,9 +34,9 @@ export default function App() {
         header={
           <Header
             variant="h1"
-            description="Create a new flavor by specifying ingredients, quality, and price. On creation a flavor will be tested by the product and marketing team."
+            description="Create a new review. On creation a review will be shared with MAP team and Partner Investment team."
           >
-            Create flavor
+            Create review
           </Header>
         }
       >
@@ -52,7 +55,7 @@ export default function App() {
                       Cancel
                     </Button>
                     <Button formAction="submit" variant="primary">
-                      Create flavor
+                      Create review
                     </Button>
                   </SpaceBetween>
                 }
@@ -61,6 +64,9 @@ export default function App() {
                   <Shape />
                   <Ingredients />
                   <Marketing />
+                  <ProjectPlanValidation />
+                  <CostCalculator />
+                  <SpecializedWorkload />
                 </SpaceBetween>
               </Form>
             </form>

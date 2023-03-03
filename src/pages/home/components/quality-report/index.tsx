@@ -26,7 +26,7 @@ export default function QualityReport({ quote, notes }: QualityReportProps) {
 
   return (
     <Container header={<Header variant="h2">Quality report</Header>}>
-      <Box variant="p">Report from latest tasting:</Box>
+      <Box variant="p">Report from latest MBR:</Box>
       <Box color="text-body-secondary">{quote}</Box>
       <Button variant="normal" onClick={() => setShowTastingNotes(true)}>
         View tasting notes

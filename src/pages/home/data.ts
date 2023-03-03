@@ -1,49 +1,49 @@
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: MIT-0
 export const variationData = [
-  { title: 'White Raspberry', value: 14 },
-  { title: 'Dark Hazelnut', value: 32 },
-  { title: 'Milk Chocolate', value: 25 },
-  { title: 'Extra Dark', value: 49 },
+  { title: 'ISV', value: 14 },
+  { title: 'ENT GFD', value: 32 },
+  { title: 'SMB', value: 25 },
+  { title: 'ENT ENG', value: 49 },
 ];
 
 export const breakdownItems = [
   {
-    name: 'Dark Hazelnut',
-    status: { type: 'success', message: 'Nominal' },
-    molding: 14,
-    mixing: 15,
+    name: 'MAP AnyCustomer A',
+    status: { type: 'success', message: 'Approved' },
+    molding: 'Assess',
+    mixing: '$500.000',
   },
   {
-    name: 'Extra Dark',
-    status: { type: 'success', message: 'Nominal' },
-    molding: 40,
-    mixing: 42,
+    name: 'MAP AnyCustomer B',
+    status: { type: 'success', message: 'Approved' },
+    molding: 'Mobilize',
+    mixing: '$600.000',
   },
   {
-    name: 'Milk Chocolate',
-    status: { type: 'success', message: 'Nominal' },
-    molding: 12,
-    mixing: 14,
+    name: 'MAP AnyCustomer C',
+    status: { type: 'success', message: 'Approved' },
+    molding: 'Migrate&Modernize',
+    mixing: '$700.000',
   },
   {
-    name: 'White Raspberry',
-    status: { type: 'success', message: 'Nominal' },
-    molding: 6,
-    mixing: 6,
+    name: 'MAP AnyCustomer D',
+    status: { type: 'success', message: 'Approved' },
+    molding: 'Migrate&Modernize',
+    mixing: '$1.000.000',
   },
 ];
 
 export const productionMetrics = [
-  { key: 'Bars per hour', value: '124k' },
-  { key: 'Active molders', value: '12' },
-  { key: 'Andon chord (last 24h)', value: '0' },
-  { key: 'Trucks loading', value: '2' },
+  { key: 'Total Reviews', value: '100' },
+  { key: 'Total Approved', value: '85' },
+  { key: 'Reviewed (this month)', value: '12' },
+  { key: 'Total Rejected', value: '15' },
 ];
 
-export const quote = `The tasting on ${new Intl.DateTimeFormat('en-US').format(
+export const quote = `Monthly PSA Meeting on ${new Intl.DateTimeFormat('en-US').format(
   new Date()
-)} among engineers and designers in London showed very positive reactions to the quality of the products. Participants tasted in average 2.3 samples from 4 different flavors. Tasting notes included fruity, and floral. The average net promoter score was 9.2.`;
+)} We identified an increasing number of issues related to MAP Credits calulation.`;
 export const notes = [
   { name: 'cherry', strong: 1, mild: 5, unnoticed: 14 },
   { name: 'raspberry', strong: 2, mild: 9, unnoticed: 9 },

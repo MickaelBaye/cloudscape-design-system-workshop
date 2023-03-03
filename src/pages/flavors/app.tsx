@@ -14,7 +14,7 @@ export default function App() {
   return (
     <ShellLayout
       contentType="table"
-      breadcrumbs={<Breadcrumbs active={{ text: 'Flavors', href: '/flavors/index.html' }} />}
+      breadcrumbs={<Breadcrumbs active={{ text: 'Reviews', href: '/flavors/index.html' }} />}
       navigation={<Navigation />}
       tools={<HelpPanel header={<h2>Help panel</h2>}></HelpPanel>}
     >

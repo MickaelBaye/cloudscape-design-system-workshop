@@ -14,8 +14,8 @@ const columnDefinitions: TableProps['columnDefinitions'] = [
     header: 'Status',
     cell: ({ status }) => <StatusIndicator type={status.type}>{status.message}</StatusIndicator>,
   },
-  { header: 'Mixing (kg/h)', cell: ({ mixing }) => mixing },
-  { header: 'Molding (kg/h)', cell: ({ molding }) => molding },
+  { header: 'ARR Estimation', cell: ({ mixing }) => mixing },
+  { header: 'Stage', cell: ({ molding }) => molding },
 ];
 
 export interface VariationsProps {
@@ -26,7 +26,7 @@ export interface VariationsProps {
 export default function Flavors({ data, items }: VariationsProps) {
   return (
     <SpaceBetween size={'l'}>
-      <Container header={<Header variant="h2">Flavors (last 24h)</Header>}>
+      <Container header={<Header variant="h2">Reviews (last month)</Header>}>
         <PieChart data={data} hideFilter={true} i18nStrings={{
           chartAriaRoleDescription: 'Pie chart',
           detailPopoverDismissAriaLabel: 'Dismiss',

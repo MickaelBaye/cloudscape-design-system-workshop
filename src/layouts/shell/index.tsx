@@ -21,8 +21,8 @@ export default function Shell({ children, contentType, breadcrumbs, tools, navig
       <div id="top-nav">
         <TopNavigation
           identity={{
-            logo: { src: '/logo.svg', alt: 'Chocolate Factory Logo' },
-            title: 'Chocolate Factory',
+            logo: { src: '/logo.svg', alt: 'Logo' },
+            title: 'MAP FR PSA Reviews',
             href: '/home/index.html',
           }}
           i18nStrings={{

@@ -133,19 +133,19 @@ export default function VariationTable({ flavors }: VariationTableProps) {
             <SpaceBetween size="xs" direction="horizontal">
               <Button disabled={collectionProps.selectedItems?.length === 0}>Edit</Button>
               <Button href="/create-flavor/index.html" variant="primary">
-                Create flavor
+                Create review
               </Button>
             </SpaceBetween>
           }
         >
-          Flavors
+          Reviews
         </Header>
       }
       pagination={<Pagination {...paginationProps} />}
       filter={
         <TextFilter
           {...filterProps}
-          filteringPlaceholder="Find flavors"
+          filteringPlaceholder="Find reviews"
           countText={getFilterCounterText(filteredItemsCount)}
         />
       }

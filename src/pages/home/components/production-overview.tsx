@@ -12,7 +12,7 @@ export interface ProductionOverviewProps {
 
 export default function ProductionOverview({ metrics }: ProductionOverviewProps) {
   return (
-    <Container header={<Header variant="h2">Production overview</Header>}>
+    <Container header={<Header variant="h2">Global overview</Header>}>
       <ColumnLayout columns={metrics.length} variant="text-grid">
         {metrics.map(({ key, value }) => (
           <Box key={key}>
